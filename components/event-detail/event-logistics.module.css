@@ -25,7 +25,10 @@
 .image img {
   width: 10rem;
   height: 10rem;
-  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .list {
