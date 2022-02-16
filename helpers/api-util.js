@@ -1,7 +1,6 @@
 export async function getAllEvents() {
-  const response = await fetch(
-    'https://nextjs-events-2d34d-default-rtdb.europe-west1.firebasedatabase.app/events.json'
-  );
+  console.log(process.env.FIREBASE_EVENTS_PATH);
+  const response = await fetch(process.env.FIREBASE_EVENTS_PATH);
   const data = await response.json();
 
   const events = [];
