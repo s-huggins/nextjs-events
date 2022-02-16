@@ -1,5 +1,4 @@
 export async function getAllEvents() {
-  console.log(process.env.FIREBASE_EVENTS_PATH);
   const response = await fetch(process.env.FIREBASE_EVENTS_PATH);
   const data = await response.json();
 
